@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional tests">
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="listeners.CustomListeners"/>
+    </listeners>
+    <!--  <test name="Login tests">
+        <classes>
+            <class name="testCases.LoginTests"/>
+        </classes>
+    </test>-->
+    <test name="Login tests">
+        <classes>
+            <class name="testCases.LogoutTests"/>
+        </classes>
+    </test>
+    <test name="Create Blog tests">
+        <classes>
+            <class name="testCases.CreateBlogTests"/>
+        </classes>
+    </test>
+    <test name="Edit Blog tests">
+        <classes>
+            <class name="testCases.EditBlogTests"/>
+        </classes>
+    </test>
+    <test name="Delete Blog tests">
+        <classes>
+            <class name="testCases.DeleteBlogTests"/>
+        </classes>
+    </test>
+    <test name="Logout tests">
+        <classes>
+            <class name="testCases.LogoutTests"/>
+        </classes>
+    </test> 
+   
+</suite>
