@@ -19,10 +19,10 @@ public class CreateBlogTests extends TestBase {
 		softAssert.assertTrue(isElementPresent(By.xpath("//a[@id='" + url + "blogurl'][@href='blog/" + url + ".html']")));
 		elementActions.click("adminPageContinueReadArrow_XPATH");
 		softAssert.assertTrue(isElementPresent(By.xpath("//p[text()='" + text + "']")));
-		softAssert.assertAll();
 		goBack();
 		deleteFirstBlog();
 		doLogOut();
+		softAssert.assertAll();
     }
 	
 	@Test(dataProviderClass=utils.DataProviderUtil.class, dataProvider="dataProvider")

@@ -25,6 +25,7 @@ public class EditBlogTests extends TestBase {
 		goBack();
 		deleteFirstBlog();
 		doLogOut();
+		softAssert.assertAll();
     }
 	
 	@Test(dataProviderClass=utils.DataProviderUtil.class, dataProvider="dataProvider")
